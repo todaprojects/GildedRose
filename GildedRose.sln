@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GildedRose_App", "GildedRose_App\GildedRose_App.csproj", "{47F36FEC-1EDF-4FB9-8B57-3B447135BBF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GildedRose_Tests", "GildedRose_Tests\GildedRose_Tests.csproj", "{857C2608-E138-4DED-855E-A0D18E1AF206}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GildedRose_Domain", "GildedRose_Domain\GildedRose_Domain.csproj", "{70E9EAAD-4422-4388-A767-97F158909DFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47F36FEC-1EDF-4FB9-8B57-3B447135BBF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47F36FEC-1EDF-4FB9-8B57-3B447135BBF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47F36FEC-1EDF-4FB9-8B57-3B447135BBF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47F36FEC-1EDF-4FB9-8B57-3B447135BBF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{857C2608-E138-4DED-855E-A0D18E1AF206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{857C2608-E138-4DED-855E-A0D18E1AF206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{857C2608-E138-4DED-855E-A0D18E1AF206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{857C2608-E138-4DED-855E-A0D18E1AF206}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70E9EAAD-4422-4388-A767-97F158909DFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70E9EAAD-4422-4388-A767-97F158909DFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70E9EAAD-4422-4388-A767-97F158909DFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70E9EAAD-4422-4388-A767-97F158909DFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
