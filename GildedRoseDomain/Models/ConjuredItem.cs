@@ -1,3 +1,5 @@
+using GildedRoseDomain.Helpers;
+
 namespace GildedRoseDomain.Models
 {
     public class ConjuredItem : BaseItem
@@ -11,10 +13,7 @@ namespace GildedRoseDomain.Models
 
             Quality -= SellIn >= 0 ? 2 : 4;
 
-            if (Quality < MinQuality)
-            {
-                Quality = MinQuality;
-            }
+            Quality = ItemQualityHelper.SetToMinQuality(this, MinQuality);
         }
     }
 }

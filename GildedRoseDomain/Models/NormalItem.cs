@@ -1,3 +1,5 @@
+using GildedRoseDomain.Helpers;
+
 namespace GildedRoseDomain.Models
 {
     public class NormalItem : BaseItem
@@ -12,10 +14,7 @@ namespace GildedRoseDomain.Models
 
             Quality -= SellIn >= 0 ? 1 : 2;
 
-            if (Quality < MinQuality)
-            {
-                Quality = MinQuality;
-            }
+            Quality = ItemQualityHelper.SetToMinQuality(this, MinQuality);
         }
     }
 }
