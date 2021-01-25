@@ -5,26 +5,26 @@ using Xunit;
 
 namespace GildedRoseTests
 {
-    public class AgedBrieItemTest
+    public class BackstagePassesItemTests
     {
         [Theory]
-        [InlineData(2, 0)]
-        [InlineData(-4, 6)]
-        [InlineData(4, 6)]
-        [InlineData(-9, 3)]
-        [InlineData(9, 3)]
+        [InlineData(15, 20)]
+        [InlineData(-10, 49)]
+        [InlineData(10, 49)]
+        [InlineData(-5, 49)]
+        [InlineData(5, 49)]
         [InlineData(-5, 7)]
-        [InlineData(5, 7)]
         [InlineData(0, 0)]
+        [InlineData(-50, 0)]
         [InlineData(50, 0)]
         [InlineData(0, 50)]
         public void RunTest(int sellIn, int quality)
         {
             IList<BaseItem> items = new List<BaseItem>
             {
-                new AgedBrieItem
+                new BackstagePassesItem
                 {
-                    Name = "Aged Brie",
+                    Name = "Backstage passes to a TAFKAL80ETC concert",
                     SellIn = sellIn,
                     Quality = quality
                 }
@@ -46,11 +46,22 @@ namespace GildedRoseTests
 
                 if (itemSellIn >= 0)
                 {
-                    itemQuality += 1;
+                    if (itemSellIn >= 10)
+                    {
+                        itemQuality += 1;
+                    }
+                    else if (itemSellIn >= 5)
+                    {
+                        itemQuality += 2;
+                    }
+                    else
+                    {
+                        itemQuality += 3;
+                    }
                 }
                 else
                 {
-                    itemQuality += 2;
+                    itemQuality = 0;
                 }
 
                 if (itemQuality > 50)

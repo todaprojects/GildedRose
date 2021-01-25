@@ -5,7 +5,7 @@ using Xunit;
 
 namespace GildedRoseTests
 {
-    public class ConjuredItemTest
+    public class ConjuredItemTests
     {
         [Theory]
         [InlineData(3, 6)]
