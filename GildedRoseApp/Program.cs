@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using GildedRose_Domain.Models;
+using GildedRoseDomain.Models;
 
-namespace GildedRose_App
+namespace GildedRoseApp
 {
     public class Program
     {

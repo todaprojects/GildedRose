@@ -1,4 +1,4 @@
-namespace GildedRose_Domain.Interfaces
+namespace GildedRoseDomain.Interfaces
 {
     public interface IGildedRose
     {

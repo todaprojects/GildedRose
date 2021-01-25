@@ -4,6 +4,8 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
 
         <IsPackable>false</IsPackable>
+
+        <RootNamespace>GildedRoseTests</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -15,7 +17,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\GildedRose_App\GildedRose_App.csproj" />
+      <ProjectReference Include="..\GildedRoseApp\GildedRoseApp.csproj" />
     </ItemGroup>
 
 </Project>

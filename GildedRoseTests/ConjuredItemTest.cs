@@ -1,30 +1,30 @@
 using System.Collections.Generic;
 using FluentAssertions;
-using GildedRose_Domain.Models;
+using GildedRoseDomain.Models;
 using Xunit;
 
-namespace GildedRose_Tests
+namespace GildedRoseTests
 {
-    public class AgedBrieItemTest
+    public class ConjuredItemTest
     {
         [Theory]
-        [InlineData(2, 0)]
-        [InlineData(-4, 6)]
-        [InlineData(4, 6)]
+        [InlineData(3, 6)]
+        [InlineData(-20, 6)]
+        [InlineData(20, 6)]
         [InlineData(-9, 3)]
         [InlineData(9, 3)]
         [InlineData(-5, 7)]
         [InlineData(5, 7)]
         [InlineData(0, 0)]
-        [InlineData(50, 0)]
+        [InlineData(-50, 0)]
         [InlineData(0, 50)]
         public void RunTest(int sellIn, int quality)
         {
             IList<BaseItem> items = new List<BaseItem>
             {
-                new AgedBrieItem
+                new ConjuredItem
                 {
-                    Name = "Aged Brie",
+                    Name = "Conjured Mana Cake",
                     SellIn = sellIn,
                     Quality = quality
                 }
@@ -46,16 +46,16 @@ namespace GildedRose_Tests
 
                 if (itemSellIn >= 0)
                 {
-                    itemQuality += 1;
+                    itemQuality -= 2;
                 }
                 else
                 {
-                    itemQuality += 2;
+                    itemQuality -= 4;
                 }
 
-                if (itemQuality > 50)
+                if (itemQuality < 0)
                 {
-                    itemQuality = 50;
+                    itemQuality = 0;
                 }
             }
         }

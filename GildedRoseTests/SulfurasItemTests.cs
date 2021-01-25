@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using FluentAssertions;
-using GildedRose_Domain.Models;
+using GildedRoseDomain.Models;
 using Xunit;
 
-namespace GildedRose_Tests
+namespace GildedRoseTests
 {
     public class SulfurasItemTests
     {

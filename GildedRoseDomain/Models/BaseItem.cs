@@ -1,6 +1,6 @@
-using GildedRose_Domain.Interfaces;
+using GildedRoseDomain.Interfaces;
 
-namespace GildedRose_Domain.Models
+namespace GildedRoseDomain.Models
 {
     public abstract class BaseItem : Item, IGildedRose
     {

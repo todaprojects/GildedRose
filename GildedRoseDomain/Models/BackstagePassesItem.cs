@@ -1,4 +1,4 @@
-namespace GildedRose_Domain.Models
+namespace GildedRoseDomain.Models
 {
     public class BackstagePassesItem : BaseItem
     {
