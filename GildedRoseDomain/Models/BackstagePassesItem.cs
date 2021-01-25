@@ -1,3 +1,5 @@
+using GildedRoseDomain.Helpers;
+
 namespace GildedRoseDomain.Models
 {
     public class BackstagePassesItem : BaseItem
@@ -27,10 +29,7 @@ namespace GildedRoseDomain.Models
                 Quality = MinQuality;
             }
 
-            if (Quality > MaxQuality)
-            {
-                Quality = MaxQuality;
-            }
+            Quality = ItemQualityHelper.SetToMaxQuality(this, MaxQuality);
         }
     }
 }
